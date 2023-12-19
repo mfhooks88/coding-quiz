@@ -26,6 +26,26 @@ var quizQuestions = [
     },
 ]
 
-function startQuiz (){
-    
-}
+var startQuiz = document.querySelector('#start');
+var timerCountdown = document.querySelector('#timer-count');
+var timerId;
+
+function startTimer(){
+    var counter = 75;
+    setInterval(function() {
+      counter--;
+      if (counter >= 0) {
+        span = document.getElementById("count");
+        span.innerHTML = counter;
+      }
+      if (counter === 0) {
+          alert('sorry, out of time');
+          clearInterval(counter);
+      }
+    }, 1000);
+  }
+  function start()
+  {
+      document.getElementById("count");
+      startTimer();
+  };

@@ -8,14 +8,17 @@
 </head>
 <body>
     <header>
+        <nav>
+            <a href="/Users/mikehooks/Desktop/Homework/coding-quiz/results.html">High Scores</a>
+        </nav>
         <h1>Coding Quiz Challenge</h1>
-        <p id="timer">Timer: 75 seconds</p>
+        <p>Timer: <span id="count">75</span> seconds</p>
     </header>
 
     <main>
         <div id="quiz-container">
-            <p id="quiz-description">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will subtract 10 seconds/points from your time/score.</p>
-            <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will subtract 10 seconds/points from your time/score.</p>
+            <button class="start-btn" onclick="start()">Start Quiz</button>
         </div>
     </main>
 

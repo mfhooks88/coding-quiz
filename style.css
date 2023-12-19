@@ -9,6 +9,11 @@ header {
     padding: 10px;
 }
 
+nav {
+    text-align: left;
+    padding: 10px;
+}
+
 main {
     padding: 20px;
 }
