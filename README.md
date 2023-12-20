@@ -23,3 +23,5 @@
 * code was used from previous lessons as well as ones found on W3 Schools and MDN
 
 * updated HTML links so both would connect since page is now published on GitHub
+
+* help also obtained utilizing AskBCS user 'jarmstrong' on JS file, put notes into each section where help was provided
