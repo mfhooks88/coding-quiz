@@ -34,3 +34,7 @@ button.option {
 label {
     display: block;
 }
+
+.hide {
+    display: none;
+}
