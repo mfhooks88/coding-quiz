@@ -33,6 +33,7 @@ var currentQuestionIndex = 0;
 var intervalId;
 var counter = 75;
 
+//help was obtained utilizing askBCS Learning Assistant "jarmstrong"
 //checks for right or wrong answer
 function checkAnswer(selectedIndex, correctAnswer){ 
     if (selectedIndex == correctAnswer) {
@@ -53,15 +54,13 @@ function checkAnswer(selectedIndex, correctAnswer){
     }
 }
 
+//help was obtained utilizing askBCS Learning Assistant "jarmstrong"
 //should subtract 10 seconds for incorrect answers
 function subtractTime() {
-    var currentCount = parseInt(timerCountdown.textContent);
-
-    var newCount = Math.max(0, currentCount - 10);
-
-    timerCountdown.textContent = newCount;
+    counter -= 10;
 }
 
+//help was obtained utilizing askBCS Learning Assistant "jarmstrong"
 //displays the question after start button pressed
 function displayQuestion(questionObj){
     var quizContainer = document.getElementById("quiz-container");
