@@ -58,7 +58,7 @@ function checkAnswer(selectedIndex, correctAnswer){
 //should subtract 10 seconds for incorrect answers
 function subtractTime() {
     counter -= 10;
-}
+  }
 
 //help was obtained utilizing askBCS Learning Assistant "jarmstrong"
 //displays the question after start button pressed
@@ -92,7 +92,8 @@ function startTimer(){
 
       if (counter === 0 || currentQuestionIndex >= quizQuestions.length) {
         clearInterval(interval);
-        alert('Game Over! Save your score ' + counter + ' by clicking the top left "High Scores" link!');
+        endQuiz();
+        // alert('Game Over! Save your score ' + counter + ' by clicking the top left "High Scores" link!');
       }
     }, 1000);
 }
@@ -101,3 +102,26 @@ function start(){
       displayQuestion(quizQuestions[0]);
       startTimer();
 }
+
+// help creating function using Tutor Scott Everett
+function endQuiz(){
+    document.querySelector("#end-quiz").classList.remove("hide")
+    document.querySelector("#quiz-container").style.display ="none"
+    document.querySelector("#end-message").textContent = "Quiz Over! Your Score is " + counter + " !"
+}
+
+// help creating function using Tutor Scott Everett
+// could get score to be submitted to local storage but could not get it to load onto the results page
+function saveScore(){
+    var userScores = JSON.parse(localStorage.getItem("userScores")) || []
+    var initials = document.querySelector("#initials").value
+    var newScore = {
+        initials: initials,
+        score: counter
+    }
+    userScores.push(newScore)
+    localStorage.setItem("userScores", JSON.stringify(userScores))
+    window.location.href = "results.html"
+}
+
+document.querySelector("#submit-btn").addEventListener("click", saveScore)
