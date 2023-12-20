@@ -21,3 +21,5 @@
 * THEN I can save my initials and score
 
 * code was used from previous lessons as well as ones found on W3 Schools and MDN
+
+* updated HTML links so both would connect since page is now published on GitHub
