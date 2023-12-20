@@ -92,7 +92,7 @@ function startTimer(){
 
       if (counter === 0 || currentQuestionIndex >= quizQuestions.length) {
         clearInterval(interval);
-        alert('Game Over! Save your score by clicking the top left "High Scores" link!');
+        alert('Game Over! Save your score ' + counter + ' by clicking the top left "High Scores" link!');
       }
     }, 1000);
 }
