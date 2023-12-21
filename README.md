@@ -20,16 +20,22 @@
 * WHEN the game is over
 * THEN I can save my initials and score
 
+# Summary
+
+Code was used to create multiple JS functions for this assignment. There are codes to check answer, display the quiz questions, start timer, end the quiz, save user score as well as subtract time for incorrect responses. This was a very challenging assignment but I am happy with the end result.
+
+# Extra notes
+
 * code was used from previous lessons as well as ones found on W3 Schools and MDN
 
 * updated HTML links so both would connect since page is now published on GitHub
 
 * help also obtained utilizing AskBCS user 'jarmstrong' on JS file, put notes into each section where help was provided
 
+https://mfhooks88.github.io/coding-quiz/
+
 <img width="961" alt="Screenshot 2023-12-20 at 2 31 09 PM" src="https://github.com/mfhooks88/coding-quiz/assets/152635274/f17e1938-ebf0-48ae-a4a0-136106c0d50d">
 
 <img width="961" alt="Screenshot 2023-12-20 at 2 31 25 PM" src="https://github.com/mfhooks88/coding-quiz/assets/152635274/05a6d701-a703-4b36-b955-70c27aa07edd">
-
-https://mfhooks88.github.io/coding-quiz/
 
 * help also obtained using Tutor, noted on file
