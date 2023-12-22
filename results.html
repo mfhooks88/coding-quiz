@@ -18,15 +18,23 @@
     </header>
 
     <main>
-        <form>
-            <label for="Initials">Enter your initials here:
-                <input type="text" id="initials" name="initials">
-            </label>
-            <br>
-
-        </form>
+        <div class="high-scores" id="user-scores"></div>
     </main>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var userScores = JSON.parse(localStorage.getItem("userScores")) || [];
+
+            var userScoresContainer = document.getElementById("user-scores");
+
+            userScores.forEach(function (score) {
+                var scoreElement = document.createElement("p");
+                scoreElement.textContent = score.initials + ": " + score.score;
+                userScoresContainer.appendChild(scoreElement);
+            });
+        });
+
+    </script>
 </body>
 
 </html>
