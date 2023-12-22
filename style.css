@@ -18,6 +18,10 @@ main {
     padding: 20px;
 }
 
+.high-scores {
+    text-align: center;
+}
+
 #quiz-container {
     text-align: center;
     display: flex;
